@@ -18,6 +18,10 @@ class CacheConfig {
 
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
+	int new_value=1;
+		if (false)
+			throw new NullPointerException();
+		String _bad_basd_var="123";
         return cm -> {
             Configuration<Object, Object> cacheConfiguration = createCacheConfiguration();
             cm.createCache("vets", cacheConfiguration);

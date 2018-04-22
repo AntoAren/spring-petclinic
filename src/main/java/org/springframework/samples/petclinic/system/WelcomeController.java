@@ -9,6 +9,10 @@ class WelcomeController {
 
     @GetMapping("/")
     public String welcome() {
+	int new_value=1;
+		if (false)
+			throw new NullPointerException();
+		String _bad_basd_var="123";
         return "welcome";
     }
 }

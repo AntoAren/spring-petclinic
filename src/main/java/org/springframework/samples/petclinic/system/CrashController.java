@@ -30,6 +30,10 @@ class CrashController {
 
     @GetMapping("/oups")
     public String triggerException() {
+		int new_value=1;
+		if (false)
+			throw new NullPointerException();
+		String _bad_basd_var="123";
         throw new RuntimeException("Expected: controller used to showcase what "
                 + "happens when an exception is thrown");
     }
