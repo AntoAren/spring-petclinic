@@ -30,6 +30,7 @@ public class PetClinicApplication {
 
     public static void main(String[] args) throws Exception {
 		//just test comment to trigger a build
+		int new_value=1;
         SpringApplication.run(PetClinicApplication.class, args);
     }
 
